@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">받아쓰기</string>
+    <string name="time">플레이시간</string>
+    <string name="score">스코어</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">받아쓰기</string>
+    <string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="add_singer">Add Singer</string>
+	<string name="delete_singer">Delete Singer: Are You Sure?</string>
+
+</resources>

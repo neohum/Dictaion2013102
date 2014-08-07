@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_empty" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="1"
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="2dip"
+            android:text="급 입니다"
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="20dip"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="mOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_reading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_first_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="mOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_first_writing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_second_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="mOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_second_writing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_third_writing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="mOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_third_writing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="mOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ib_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            android:id="@+id/ADMobAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="a150c0c1b212396"
+            ads:loadAdOnCreate="true"
+            android:gravity="center" />
+
+        <ListView
+            android:id="@+id/list_from_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

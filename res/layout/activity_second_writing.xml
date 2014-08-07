@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_empty" >
+
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="1"
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="2dip"
+            android:text="급 받침쓰기"
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="20dip"
+            android:text=""
+            android:textColor="#ffffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blackboard"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imgDictationField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:src="@drawable/i_0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dip"
+        android:paddingTop="10dip" >
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_speaker"
+            android:onClick="mOnClick" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_check"
+            android:onClick="mOnClick" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_num_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_01"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_02"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_03"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_04"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_05"
+                android:onClick="mOnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_num_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_06"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_07"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_08"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_09"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/btn_num_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_10"
+                android:onClick="mOnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            android:id="@+id/ADMobAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="a150c0c1b212396"
+            ads:loadAdOnCreate="true"
+            android:gravity="center" />
+
+        <ListView
+            android:id="@+id/list_from_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

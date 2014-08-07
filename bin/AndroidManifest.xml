@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.honeyv.dictation2013102"
+    android:versionCode="5"
+    android:versionName="1.01" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.honeyv.dictation2013102.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.honeyv.dictation2013102.IntroActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.SubActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.ReadingActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.FirstWritingActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.SecondWritingActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.ThirdWritingActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.CheckActivity" >
+        </activity>
+        <activity android:name="com.honeyv.dictation2013102.ResultActivity" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+             />        
+    </application>
+
+</manifest>
